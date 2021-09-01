@@ -73,17 +73,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+*Ara Ara...* {}, I am {}!
+It will be pleasure for me to serve your chat  🤍
+*Meet me at* @AnimaxChatZone !
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
-
+『Here's the commands for *{}*』
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -91,8 +87,6 @@ the things I can help you with.
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-
-
 {}
 And the following:
 """.format(
@@ -100,7 +94,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/5480c2bb0aef9d8715e76.jpg"
+SAITAMA_IMG = "https://c.tenor.com/l7PZ-vCq4FsAAAAC/rias-gremory-highschool-dxd.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
@@ -222,8 +216,8 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Zerotwo to your group",
-                                url="t.me/{}?startgroup=true".format(
+                                text="🤍 Add me To Group and Have Fun 🤍",
+                                url="t.me/Rias_Chatbot?startgroup=true".format(
                                     context.bot.username
                                 ),
                             )
@@ -231,23 +225,23 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                url=f"https://t.me/AnimaxChatZone",
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
-                                url="https://t.me/ZerotwoUpdate",
+                                url="https://t.me/Weetaku_Anime",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🧾 Getting started guide",
-                                url="https://t.me/Zerotwoupdate",
+                                url="https://t.me/Weetaku_Anime",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Logs",
-                                url="https://t.me/Zerotwolog",
+                                text="Anime Channel",
+                                url="https://t.me/Animax_Industry",
                             )
                         ],
                     ]
